@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الشات والتعليقات</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h2>غرفة الشات</h2>
+  <div id="chat-box" style="height: 300px; overflow-y: scroll; border: 1px solid #ccc;"></div>
+  <input type="text" id="messageInput" placeholder="اكتب رسالتك هنا">
+  <button id="sendBtn">إرسال</button>
+
+  <div class="navbar">
+    <a href="index.html">الصفحة الرئيسية</a>
+    <a href="login.html">تسجيل الدخول</a>
+    <a href="admin.html">لوحة التحكم</a>
+  </div>
+
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/chat.js"></script>
+</body>
+</html>

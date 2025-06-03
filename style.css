@@ -1,0 +1,74 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.main-title {
+  margin-top: 50px;
+}
+
+#title {
+  font-size: 2.5rem;
+  animation: slideText 10s linear infinite;
+  background: linear-gradient(to right, gold, orange, gold);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.decorative-line {
+  border: none;
+  height: 2px;
+  margin: 20px auto;
+  width: 80%;
+  background: linear-gradient(to right, white, gray, white);
+  box-shadow: 0 0 10px #fff;
+}
+
+.welcome {
+  font-size: 1.2rem;
+  color: gold;
+  text-shadow: 0 0 5px #FFD700;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #222;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+.lang-switch {
+  margin: 20px;
+}
+
+@keyframes slideText {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}

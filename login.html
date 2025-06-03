@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h2>تسجيل الدخول أو إنشاء مستخدم</h2>
+  <form id="registerForm">
+    <input type="text" id="username" placeholder="اسم المستخدم" required><br>
+    <input type="password" id="password" placeholder="كلمة المرور"><br>
+    <input type="number" id="age" placeholder="العمر"><br>
+    <input type="date" id="birth" placeholder="تاريخ الميلاد"><br>
+    <input type="text" id="country" placeholder="البلد"><br>
+    <select id="nationality">
+      <option value="">اختر الجنسية</option>
+      <option value="يمني">يمني</option>
+      <option value="سعودي">سعودي</option>
+      <option value="أخرى">أخرى</option>
+    </select><br>
+    <select id="gender">
+      <option value="">اختر الجنس</option>
+      <option value="ذكر">ذكر</option>
+      <option value="أنثى">أنثى</option>
+    </select><br><br>
+    <button type="submit">دخول</button>
+    <button type="button" id="guestBtn">دخول كزائر</button>
+  </form>
+
+  <div class="navbar">
+    <a href="index.html">الصفحة الرئيسية</a>
+    <a href="chat.html">الشات</a>
+    <a href="admin.html">لوحة التحكم</a>
+  </div>
+
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>
